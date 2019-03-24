@@ -8,10 +8,10 @@
 # Here is what you can enter to schedule the cron job on your web host: 
 # /bin/sh /home/username/public_html/webwatcher.sh
 
-# create and rename the source file
-# if the source file does not exist a warning is displayed, but the script will keep processing just fine.
+# create and rename the source files
+# if the source files do not exist a warning is displayed, but the script will keep processing just fine.
 # Download the website file.
-touch web_log
+touch web_log web_log_master
 # The c flag is used to continue in case of issues downloading
 # The O flag is to pipe the output of the file to web_log so we can do our comparison logic.
 # If you install torsocks and add the torsocks command before wget below, you can use anonymous 
