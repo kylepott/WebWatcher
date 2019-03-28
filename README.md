@@ -11,5 +11,5 @@ WebWatcher assumes direct access to the web log and it uses the webhost's settin
 
 # Integrity
 sha256sum webwatcher.sh 
-fb47c7ca7e9e8462ab59f75d6159822e355bc454c557de559fa36471f3fd2277  webwatcher.sh
+6253bd93199502f7b3ed060f6d9a36dd3235aa3e826ff070d43b69141e51e187 webwatcher.sh
 
