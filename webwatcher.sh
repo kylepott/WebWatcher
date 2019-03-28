@@ -24,10 +24,8 @@ cp web_log_master web_log #Copy your master version of the website into the work
 # https://stackoverflow.com/questions/8139885/shellscript-action-if-two-files-are-different
 if ! cmp web_log web_log_source > /dev/null 2>&1
 then
-# email logic
-echo "The Website changed at $(date)" | mailx youremailaddress@email.com
-# If the website has changed, we want to create a new master.
-cp web_log_source web_log_master
+# email logic && if the website has changed, we want to create a new master.
+echo "The Website changed at $(date)" | mailx youremailaddress@email.com && cp web_log_source web_log_master
 fi
 
 # Some webhosts send you a confirmation email after a cron job runs.
